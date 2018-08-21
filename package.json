@@ -1,0 +1,21 @@
+{
+  "name": "se",
+  "version": "1.0.0",
+  "description": "Standard form recoding service requests for quotes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r dotenv/config -r babel-polyfill app.js"
+  },
+  "author": "jiell richardson",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.7",
+    "nodemon": "^1.18.3"
+  }
+}
