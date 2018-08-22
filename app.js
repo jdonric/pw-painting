@@ -52,8 +52,6 @@ smtpTrans.sendMail(message, function (error, response) {
   });
 });
 
-app.listen('https://se-dc.herokuapp.com/', function (req, res) {
-    console.log('TUNED INTO PORT 3000');
-});
+app.listen('https://se-dc.herokuapp.com/');
 
 
