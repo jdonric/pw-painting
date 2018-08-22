@@ -3,12 +3,13 @@
         <title>Sharper Edges - DC Painting &amp; Dry Wall</title>
         <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
-        <link rel="shortcut icon" href="https://res.cloudinary.com/rapha3l/image/upload/v1534098207/_2Sharper_Edges_joa2cg.png">
+        <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+        <link rel="shortcut icon" href="https://res.cloudinary.com/rapha3l/image/upload/v1534269394/Sharper_Edges_w__yp5jcu.png">
 
         <style type="text/css">
         body {
-            background-image: url('https://res.cloudinary.com/rapha3l/image/upload/v1534621243/painter-3391882_1920_llvydt.jpg');
-            background-size:cover;
+            background-image: url('https://res.cloudinary.com/rapha3l/image/upload/v1534957804/SE00407f_background2_i5jrlz.jpg');
+            background-size:contain;
             background-repeat: none;
             background-attachment: fixed;
             font-family: Hind, sans-serif;
@@ -16,23 +17,36 @@
         #nav {
             
             border: 9px solid;
-            border-color: darkgrey;
-            background-color: darkgrey;
+           border-color: lightgrey;
+            background-color: lightgrey;
             margin-left: 0;
             text-align: center;
         }
         li {
-            display: inline-block;
-            margin-left: 30px;
-            margin-right: 15px;
-            font-size: 22px;
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+            font-size: 25px;
             font-family: Hind, sans-serif;
-            color:#0b31a9;
+            color: white;
+            letter-spacing: 2px;
+            
             text-align: center;
             
     
         }
 
+        a:link {
+             text-decoration: none;
+        }
+
+        a:hover {
+            color: darkred;
+        }
+
+        a:visited {
+           color: tan;
+        }
         h4 {
             font-size: 52px;
             width: 60%;
@@ -40,10 +54,10 @@
             line-height: 48px;
             margin-left: 20%;
             color: darkred;
+            font-family: 'Racing Sans One', cursive;
            
       
         }
-
         h4, #logo {
             display: block;
         }
@@ -56,11 +70,11 @@
             
         }
         #site {
-            width: 80%;
-            background-color: lightgrey;
-            opacity: 0.99;
+            width: 60%;
+            background-color: white;
+            opacity: 0.90;
                 float: left;
-               margin-left:10%;
+               margin-left:20%;
             
   
                 
@@ -70,7 +84,6 @@
             
             
         }
-
         p {
             margin-left: 60px;
             margin-right: 60px;
@@ -80,10 +93,13 @@
         h1 {
             text-align: center;
             letter-spacing: 1px;
+            margin-top: 25px;
+            font-family: 'Racing Sans One', cursive;
         }
         h3{
             color: #0b31a9;
             margin-left: 59px;
+            
         }
         h5, #foot {
             color: grey;
@@ -96,25 +112,42 @@
         #site, #foot {
             display: block;
         }
+
+        /* FORM */
+
         fieldset {
-            padding: 15px;
             border-style: none;
-            margin-left: 50px;
-        }
-        input {
-            border-color: #0b31a9;
-            margin: 15px;
-        }
-        button {
-            background-color: grey;
-            color: #0b31a9;
-            padding: 12px;
-            margin-left: 100px;
-            border-style: none;
+            width: 80%;
+            margin-left: 10%;
+           margin: auto;
+           display: block;
         }
 
-        form {
-            border-style: none;
+        #fullName, #your-email {
+            display: inline-block;
+           height: 4%;
+            width: 39.9%;
+            margin:auto;
+            border-color:#0b31a9
+            
+        }
+
+        #description {
+            width: 80%;
+            height: 15%;
+            margin-top: 15px;
+            border-color:#0b31a9
+           
+        }
+        
+        button {
+            
+            color: #0b31a9;
+            margin-left: 12%;
+            padding: 12px;
+            margin-top: 15px;
+            border-style: solid;
+            border-color: #0b31a9;
         }
         /*SLIDESHOW*/
         .aSlide {
@@ -131,40 +164,46 @@
         #arrow-button1 {
             margin-left: 15%;
         }
-
         .icon {
             margin-left: 40px;
         }
-
-        /*MOBILE DESIGN */
+       
+       
+       
+       
+       
+        /*MOBILE DESIGN MOBILE DESIGN MOBILE DESIGN MOBILE DESIGN MOBILE DESIGN */
         @media only screen and (max-width: 700px) {
+
+            body {
+                background-image: url('https://res.cloudinary.com/rapha3l/image/upload/v1534253401/wood_heujvq.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
        #site {
            width: 90%;
            margin-left: 5%;
            opacity: 0.95;
        }
-
        li {
-           color: darkred;
+           color: lightgrey;
            display: inline-block;
            font-size: 13px;
            margin: auto;
+           font-weight: bold;
            margin-left: 8px;
            
        }
-
        h1 {
            font-size: 30px;
            padding: 6%;
        }
-
        p {
            width: 80%;
            font-size: 14px;
            text-align: center;
            margin-left: 10%;
        }
-
        h3 {
            margin-left: 5%;
            margin-bottom: 35px;
@@ -173,22 +212,18 @@
        
            
        }
-
        h4 {
            display: none;
        }
-
        #logo {
            width: 83%;
            height: auto;
           margin: auto;
            display: block;
        }
-
        .aSlide {
            width: 85%;
        }
-
        button {
            color: #0b31a9;
            background-color: darkred;
@@ -196,7 +231,6 @@
         display: block;
         margin: auto;
        }
-
        #foot {
            bottom: 1;
            position: relative;
@@ -204,19 +238,40 @@
            margin-top: 40px;
        }
 
+       #fullName, #your-email {
+            display: block;
+           height: 4%;
+            width: 80%;
+          
+            margin:auto;
+            border-color:#0b31a9
+            
+        }
+
+        #description {
+            width: 80%;
+            height: 15%;
+            margin: auto;
+            display: block;
+           
+            border-color:#0b31a9
+           
+        }
+        
+        button {
+            
+            color: #0b31a9;
+            margin-left: 12%;
+            padding: 8px;
+            margin: auto;
+            display: block;
+            margin-top: 15px;
+            border-style: solid;
+            border-color: #0b31a9;
+        }
       
-
-       #your-email, #full-name {
-           display: inline-block;
-           width: 100%;
-       }
-
-       #description {
-           width:100%
-       }
-
+    
        
-
 }
         
         </style>
@@ -224,6 +279,11 @@
     </head>
 
     <body>
+            <ul>
+                    <li>Home</li>
+                    <a href="#service"><li>Services</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                </ul>
             <div id="site">
                    
         <!--NAV BAR-->
@@ -233,14 +293,12 @@
           
             <img id="logo" src="http://res.cloudinary.com/rapha3l/image/upload/v1534380912/sharper_edges_815_cucep3.png">
             <h4>Give us a call. We can paint it all!</h4>
-            <ul>
-                    <li>Home</li>
-                    <a href="#service"><li>Services</li></a>
-                    <a href="#contact"><li>Contact</li></a>
-                </ul>
+            
         </div>
           
         <!--CONTENT-->
+
+        
        
            
            <br />
@@ -313,9 +371,9 @@
         <h1 id="contact"> CONTACT FOR A QUOTE</h1>
         <form action="/contact" id="quote-form" method="post" role="form">
             <fieldset>
-                    <input type="text" id="fullname" name="fName" placeholder="Full Name" style="width:38%; height:5%" required>
-                    <input type="email" id ="your-email" name="yEmail" placeholder="Email Address" style="width:38%; height:5%" required>
-                    <input id="description" type="text" name="description" placeholder="Description of services you are seeking" style="width:83%; height:20%;"required>
+                    <input type="text" id="fullname" name="fName" placeholder="Full Name" required>
+                    <input type="email" id ="your-email" name="yEmail" placeholder="Email Address" required>
+                    <input id="description" type="text" name="description" placeholder="Description of services you are seeking" required>
                        <button type="submit">Submit</button> 
            </fieldset>
         </form>
