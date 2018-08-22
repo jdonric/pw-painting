@@ -52,6 +52,6 @@ smtpTrans.sendMail(message, function (error, response) {
   });
 });
 
-app.listen('SE_HOST');
+app.listen(SE_HOST || 3000);
 
 
