@@ -18,7 +18,7 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.get('https://se-dc.herokuapp.com/', function(req, res){
+app.get('/', function(req, res){
     res.render('index');
 });
 
@@ -52,6 +52,6 @@ smtpTrans.sendMail(message, function (error, response) {
   });
 });
 
-app.listen('https://se-dc.herokuapp.com/');
+app.listen('https://se-dc.herokuapp.com');
 
 
