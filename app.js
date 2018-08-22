@@ -52,6 +52,6 @@ smtpTrans.sendMail(message, function (error, response) {
   });
 });
 
-app.listen('https://se-dc.herokuapp.com');
+app.listen('SE_HOST');
 
 
