@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
+var PORT = process.env.PORT || 3000;
 var ENV = process.env.NODE_ENV || 'development';
 var SE_USER = process.env.SE_USER;
 var SE_PW = process.env.SE_PW;
@@ -52,6 +53,8 @@ smtpTrans.sendMail(message, function (error, response) {
   });
 });
 
-app.listen(SE_HOST || 3000);
+app.listen(PORT, function (req, res){
+    console.log(`TUNED INTO ${PORT}`);
+});
 
 
