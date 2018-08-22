@@ -32,32 +32,33 @@
             
     
         }
-
         h4 {
             font-size: 52px;
-            width: 205px;
+            width: 60%;
             letter-spacing: 1px;
+            line-height: 48px;
+            margin-left: 20%;
             color: darkred;
            
       
         }
-
         h4, #logo {
-            display: inline-block;
+            display: block;
         }
         #logo {
             width: 39%;
-          margin-left: 30px;
+          margin-left: 30.5%;
+         
             margin-top: 5%;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
             
         }
         #site {
-            width: 70%;
+            width: 80%;
             background-color: lightgrey;
             opacity: 0.99;
                 float: left;
-               margin-left:15%;
+               margin-left:10%;
             
   
                 
@@ -67,7 +68,6 @@
             
             
         }
-
         p {
             margin-left: 60px;
             margin-right: 60px;
@@ -86,11 +86,12 @@
             color: grey;
             font-size: 12px;
             bottom: 3;
-           position: absolute;
+           position: relative;
+           clear: both;
             
         }
         #site, #foot {
-            display: inline-block;
+            display: block;
         }
         fieldset {
             padding: 15px;
@@ -108,7 +109,6 @@
             margin-left: 100px;
             border-style: none;
         }
-
         form {
             border-style: none;
         }
@@ -127,10 +127,77 @@
         #arrow-button1 {
             margin-left: 15%;
         }
-
         .icon {
             margin-left: 40px;
         }
+        /*MOBILE DESIGN */
+        @media only screen and (max-width: 700px) {
+       #site {
+           width: 90%;
+           margin-left: 5%;
+           opacity: 0.95;
+       }
+       li {
+           color: darkred;
+           display: inline-block;
+           font-size: 13px;
+           margin: auto;
+           margin-left: 8px;
+           
+       }
+       h1 {
+           font-size: 30px;
+           padding: 6%;
+       }
+       p {
+           width: 80%;
+           font-size: 14px;
+           text-align: center;
+           margin-left: 10%;
+       }
+       h3 {
+           margin-left: 5%;
+           margin-bottom: 35px;
+           font-size: 17px;
+           padding: 5%;
+       
+           
+       }
+       h4 {
+           display: none;
+       }
+       #logo {
+           width: 83%;
+           height: auto;
+          margin: auto;
+           display: block;
+       }
+       .aSlide {
+           width: 85%;
+       }
+       button {
+           color: #0b31a9;
+           background-color: darkred;
+           font-weight:bold;
+        display: block;
+        margin: auto;
+       }
+       #foot {
+           bottom: 1;
+           position: relative;
+           clear:both;
+           margin-top: 40px;
+       }
+      
+       #your-email, #full-name {
+           display: inline-block;
+           width: 100%;
+       }
+       #description {
+           width:100%
+       }
+       
+}
         
         </style>
 
@@ -141,14 +208,17 @@
                    
         <!--NAV BAR-->
        <div id="nav">
-           <h4>Give us a call. We can paint it all!</h4>
+           
+           
+          
             <img id="logo" src="http://res.cloudinary.com/rapha3l/image/upload/v1534380912/sharper_edges_815_cucep3.png">
-           <ul>
-               <li>Home</li>
-               <a href="#service"><li>Services</li></a>
-               <a href="#contact"><li>Contact</li></a>
-           </ul>
-       </div>
+            <h4>Give us a call. We can paint it all!</h4>
+            <ul>
+                    <li>Home</li>
+                    <a href="#service"><li>Services</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                </ul>
+        </div>
           
         <!--CONTENT-->
        
@@ -225,7 +295,7 @@
             <fieldset>
                     <input type="text" id="fullname" name="fName" placeholder="Full Name" style="width:38%; height:5%" required>
                     <input type="email" id ="your-email" name="yEmail" placeholder="Email Address" style="width:38%; height:5%" required>
-                    <input typ="text" name="description" placeholder="Description of services you are seeking" style="width:83%; height:20%;"required>
+                    <input id="description" type="text" name="description" placeholder="Description of services you are seeking" style="width:83%; height:20%;"required>
                        <button type="submit">Submit</button> 
            </fieldset>
         </form>
