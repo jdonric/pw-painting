@@ -48,7 +48,7 @@ smtpTrans.sendMail(message, function (error, response) {
       res.send('Quote request FAILED');
     }
     else {
-      res.send('Quote request SUCCESSFUL');
+      res.render('confirmation');
     }
   });
 });
