@@ -45,7 +45,7 @@ message = {
 },
 smtpTrans.sendMail(message, function (error, response) {
     if (error) {
-      res.send('Quote request FAILED');
+      res.render('error');
     }
     else {
       res.render('confirmation');
