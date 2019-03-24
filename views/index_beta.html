@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>Payton &amp; Wayne Painting and Drywall - DC Metro Area </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Hind:400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+        <link rel="shortcut icon" href="https://res.cloudinary.com/rapha3l/image/upload/v1535118476/PW_icon2_mtr4fp.png">
+        <link rel="stylesheet" href="index_beta.css">
+        
+
+    </head>
+
+    <body>
+
+        <!--BANNER IMAGE-->
+        <div id="banner">
+           
+            <!--background-image-->
+
+        </div>
+
+        <!--NAV BAR-->
+            <ul>
+                    <a><li href="#welcome">Home</li></a>
+                    <a href="#services"><li>Services</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                </ul>
+                
+           
+                   
+        <!--HOME CONTENT-->
+        <div id="welcome">
+          <br/>
+          <br/>
+          <div id="welcome-card">
+            <img id="collage" src="https://res.cloudinary.com/rapha3l/image/upload/v1553441808/paint_collage_odfq4n.png">
+
+            <p id="welcome-p">
+              <span>Payton & Wayne <br/> Painting and Drywall</span>
+              <br/>
+              <em>Quality service. Skilled work. Fair pricing.</em>
+              <br/>
+              <br/>
+              Serving the DC Metro Area<br/>
+             (202) 744-6732 / 834-8044
+
+            </p>
+
+          </div>
+          
+        </div>
+
+
+        <br/>
+        <!--SERVICES-->
+        <div id="service-container">
+
+          <div id="service-padding">
+            <h2 id="services">Services</h2>
+            <div class="service" id="service-1">
+                <img class="icon" src="https://res.cloudinary.com/rapha3l/image/upload/v1534621814/wall-sconce_1_cmysue.png">
+                <p class="description-p">Transforming plain, and sometimes unsightly, interiors into gorgeous, a beautiful and expressive extention of your 
+                        personality and/or brand is at the heart of business. It is our speciality at Payton &amp; Wayne and we take great pride in it. We can a room or two, or the whole house!</p>
+            </div>
+            
+            <div class="service" id="service-2">
+                    <img class="icon" src="https://res.cloudinary.com/rapha3l/image/upload/v1534621835/home_zj6sql.png">
+                    <p class="description-p">Payton &amp; Wayne Painting and Drywall provides high quality painitng services for your home and commercial exteriors. We are equipped and prepared to 
+                            paint doors, windows, fences, and small to medium-sized exterior walls. Please feel free to ask about whole buildings and large commercial projects.</p>
+                </div>
+            
+            <div class="service" id="service-3">
+                    <img class="icon" src="https://res.cloudinary.com/rapha3l/image/upload/v1534621826/ruler_xevcy2.png">
+                    <p class="description-p">We install dry wall in older homes and commercial building, as well as provide repairing for pre-installations. We work diligently and efficiently,
+                            and safety is our highest priority. Payton &amp; Wayne are sure to offer peace of mind with our sound prices and quality work.</p>
+            </div>
+        </div>
+      </div>
+        <br/>
+        <br/>
+        <br/> 
+        
+        
+        <!--CONTACT-->
+      <div id="contact-containter">
+        <h2 id="contact"> Get a free QUOTE</h2>
+        <form action="/contact" id="quote-form" method="post" role="form">
+            <fieldset>
+                    <input type="text" id="fullname" name="fName" placeholder="Full Name" required>
+                    <input type="email" id ="your-email" name="yEmail" placeholder="Email Address" required>
+                    <textarea id="description" type="textarea" name="description" placeholder="Description of services you are seeking" rows="6" cols="40" required></textarea>
+                       <button id="btn" type="submit">Submit</button> 
+           </fieldset>
+        </form>
+        
+       
+        </div>
+        <footer> <em>&copy;2019 Payton & Wayne Painting and Drywall <br/>Designed by <a href="https://jiellr.com/">jiellr</a></em></footer>
+        
+        
+        
+
+     <!--JAVASCRIPT-->
+        <script>
+                $(document).ready(function(){
+                  $("#service-1").mouseover(function(){
+                    $("#service-1").animate({borderWidth: "9px"});
+                  });
+                  $("#service-1").mouseout(function(){
+                    $("#service-1").animate({borderWidth: "0px"});
+                  });
+
+                  $("#service-2").mouseover(function(){
+                    $("#service-2").animate({borderWidth: "9px"});
+                  });
+                  $("#service-2").mouseout(function(){
+                    $("#service-2").animate({borderWidth: "0px"});
+                  });
+
+                  $("#service-3").mouseover(function(){
+                    $("#service-3").animate({borderWidth: "9px"});
+                  });
+                  $("#service-3").mouseout(function(){
+                    $("#service-3").animate({borderWidth: "0px"});
+                  });
+
+
+                  $("#btn").mouseover(function(){
+                    $("#btn").animate({borderWidth: "5px"});
+                  });
+                  $("#btn").mouseout(function(){
+                    $("#btn").animate({borderWidth: "0px"});
+                  });
+                });
+        </script>
+    </body>
+
+</html>
