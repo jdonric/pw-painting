@@ -6,7 +6,371 @@
         <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
         <link rel="shortcut icon" href="https://res.cloudinary.com/rapha3l/image/upload/v1535118476/PW_icon2_mtr4fp.png">
-        <link rel="stylesheet" href="index_beta.css">
+        
+        <style type="text/css">
+            body {
+                margin:0;
+                background-image: url('https://res.cloudinary.com/rapha3l/image/upload/v1553306146/bg_reverse_pw_ufnkrz.jpg');
+                background-size:cover;
+                background-repeat: none;
+                background-attachment: fixed;
+                font-family: Hind, sans-serif;
+            }
+            
+            h2 {
+                font-family: 'Hind', sans-serif;
+                color: whitesmoke;
+                text-align:center;
+                font-size: 32px;
+                margin-top: 10%;
+            }
+            
+                /* banner */
+            #banner {
+                background-image: url('https://res.cloudinary.com/rapha3l/image/upload/v1553348492/pw-web-banner_amxdt1.png');
+                background-attachment: scroll;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width:100%;
+                height:100%;
+                margin:0;
+                
+            }
+            
+            
+            #banner-text {
+                font-family: 'Hind', sans-serif;
+                font-size: 5em;
+                font-weight: bold;
+                position: absolute;
+                line-height: 65px;
+                color:#0b31a9 ;
+            
+            }
+            
+            
+            
+                /* navbar */
+            ul {
+                list-style-type: none;
+                height: 7%;
+                margin: 0;
+                padding-top: 2.5%;
+                overflow: hidden;
+                background-color: #222;
+                position: -webkit-sticky; 
+                position: sticky;
+                top: 0;
+                margin-bottom: 10%;
+                z-index:2;
+              }
+            
+              li {
+                display: inline;
+                color: white;
+                
+                padding: 2%;
+                font-size: 1em;
+                text-decoration: none;
+              }
+            
+              a:link {
+                  text-decoration: none;
+              }
+            
+              a:hover {
+                  background-color: #0b31a9;
+                  padding-top:3%;
+                  padding-bottom:3%;
+                  height:  7%;
+                  cursor: pointer;
+              }
+            
+              a:visited {
+                  color:grey;
+              }
+            
+              /* HOME */
+              #welcome {
+                  width: 100%;
+                  height: 90%;
+              }
+            
+              #welcome-card {
+                  width: 65%;
+                  padding: 5%;
+                  margin: auto;
+                  display: block;
+                  background-color: lightgrey;
+              }
+            
+              #welcome-p {
+                  width:25%;
+                  position: absolute;
+                  font-family: 'Hind', sans-serif;
+                  font-size: 18px;
+                  z-index: 1;
+              }
+            
+              span {
+                  font-family: 'Hind',Arial, Helvetica, sans-serif;
+                  font-weight: lighter;
+                  font-size: 30px;
+                  text-align: center;
+                  color:#5271ff;
+                  z-index: 1;
+              }
+            
+              #collage, #welcome-p {
+                  display: inline;
+              }
+            
+              #collage {
+                   width: 55%;
+                   height: auto;
+              }
+            
+              /* SERVICES */
+              #service-container {
+                  width: 100%;
+                  height: 70%;
+                  
+              }
+            
+              .service {
+                width: 20%;
+                height: 70%;
+                  margin: 5%;
+                  margin-top: 1.5%;
+                  padding:1%;
+                  display: inline-block;
+                 background-color: whitesmoke;
+                 border-color:#d9d9d9;
+                 border-style: solid;
+                border-width: 0px;
+              }
+            
+              .icon {
+                  width: 17%;
+                  height:auto;
+                  margin:auto;
+                  display: block;
+                  margin-top: 5%;
+              }
+              .description-p {
+                  width: 75%;
+                  font-size: 14px;
+                  text-align: left;
+                  margin-left: 12%;
+              }
+            
+              .icon, .description-p {
+                  display: block;
+                  
+              }
+            
+              /* CONTACT */
+              fieldset {
+                  border-style: none;
+                  width: 60%;
+                  margin-left: 15%;
+              }
+            
+              #fullname #your-email, #description {
+                  display: block;
+                  margin-bottom: 3%;
+                  width: 90%;
+            
+                background-color: #222222;
+                color:white;
+              }
+            
+              #fullname, #your-email {
+                  width: 45%;
+                  height: 6%;
+                  background-color: #222222;
+                  color: whitesmoke;
+                  border-style:none;
+                  font-family: 'Hind', Arial, Helvetica, sans-serif;
+              }
+            
+              #description {
+                  width: 90.7%;
+                  height: 15%;
+                  margin-top: 2%;
+                  border-style:none;
+                  color: whitesmoke;
+            
+              }
+            
+              textarea {
+                  font-family: 'Hind', Arial, Helvetica, sans-serif;
+              }
+            
+              button {
+                  font-family: 'Hind', Arial, Helvetica, sans-serif;
+                  padding: 2%;
+                  border-style: solid;
+                  border-width: 0px;
+                  border-color: #222222;
+                  background-color:#5271ff;
+                  cursor: pointer;
+                  color: white;
+              }
+            
+              #contact-containter {
+                  width: 100%;
+                  height: 80%;
+              }
+            
+              footer {
+                  color: #0b31a9;
+                  font-size: 11px;
+                  bottom: 7;
+                  margin: 3%;
+              }
+              
+             
+              
+            
+            
+            
+            
+            /*MOBILE DESIGN MOBILE DESIGN MOBILE DESIGN MOBILE DESIGN MOBILE DESIGN */
+            @media only screen and (max-width: 700px) {
+                body {
+                    background-image: url('https://res.cloudinary.com/rapha3l/image/upload/v1534253401/wood_heujvq.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            
+                #banner {
+                    background-image: url('https://res.cloudinary.com/rapha3l/image/upload/v1553348492/pw-web-banner_amxdt1.png');
+                    background-attachment: scroll;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width:100%;
+                   height:35%;
+                    margin:0;
+                    
+                }
+            
+                ul {
+                    list-style-type: none;
+                    height: 7%;
+                    margin: 0;
+                    padding-top: 2.5%;
+                    background-color: #222;
+                    margin-bottom: 10%;
+                    z-index:2;
+                    
+                  }
+            
+            
+                  #welcome {
+                    width: 100%;
+                    height:auto;
+                   
+                }
+              
+                #welcome-card {
+                    width: 82%;
+                    height: 73%;
+                    padding:4%;
+                    margin: auto;
+                    display: block;
+                    background-color: lightgrey;
+                }
+              
+                #welcome-p {
+                    width:75%;
+                    position: absolute;
+                    font-family: 'Hind', sans-serif;
+                    font-size: 1em;
+                    text-align:center;
+                    z-index: 1;
+                }
+              
+                span {
+                    font-family: 'Hind', Arial, Helvetica, sans-serif;
+                    font-weight: lighter;
+                    font-size: 1em;
+                    text-align: center;
+                    color:#5271ff;
+                    z-index: 1;
+                }
+              
+                #collage, #welcome-p {
+                    display: block;
+                }
+              
+                #collage {
+                     width: 90%;
+                     height: auto;
+                }
+            
+                #service-container {
+                    width: 100%;
+                  height: auto;
+                  z-index: 1;
+                    
+                }
+            
+                .service {
+                    width: 80%;
+                    height: 65%;
+                      margin: 5%;
+                      margin-top: 1.5%;
+                      padding:1%;
+                      display: block;
+                     background-color: whitesmoke;
+                     border-color:#d9d9d9;
+                     border-style: solid;
+                    border-width: 0px;
+                  }
+            
+                  .icon {
+                    width: 17%;
+                    height:auto;
+                    margin:auto;
+                    display: block;
+                    margin-top: 5%;
+                }
+                .description-p {
+                    width: 80%;
+                    font-size: 0.8em;
+                    text-align: center;
+                    margin-left: 10%;
+                }
+            
+                #contact-containter {
+                    width: 100%;
+                    
+                    
+                }
+            
+                fieldset {
+                    border-style: none;
+                    width: 90%;
+                    margin-left: 5%;
+                    bottom: 30;
+                 
+                }
+            
+                
+              footer {
+                color: #5271ff;
+                font-size: 11px;
+                bottom: 7;
+                margin: 3%;
+            }
+            
+            
+            
+            }
+            
+                    
+                    </style>
         
 
     </head>
