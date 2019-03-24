@@ -1,405 +1,139 @@
 <html>
     <head>
         <title>Payton &amp; Wayne Painting and Drywall - DC Metro Area </title>
-        <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Hind:400,500" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
         <link rel="shortcut icon" href="https://res.cloudinary.com/rapha3l/image/upload/v1535118476/PW_icon2_mtr4fp.png">
-
-        <style type="text/css">
-        body {
-            background-image: url('https://res.cloudinary.com/rapha3l/image/upload/v1534957804/SE00407f_background2_i5jrlz.jpg');
-            background-size:cover;
-            background-repeat: none;
-            background-attachment: fixed;
-            font-family: Hind, sans-serif;
-        }
-        #nav {
-            
-            border: 9px solid;
-           border-color: lightgrey;
-            background-color: lightgrey;
-            margin-left: 0;
-            text-align: center;
-        }
-        li {
-            display: block;
-            margin: auto;
-            margin-top: 30px;
-            font-size: 25px;
-            font-family: Hind, sans-serif;
-            color: white;
-            letter-spacing: 1px;
-            line-height: 8px;
-            text-align: center;
-            
-    
-        }
-        a:link {
-             text-decoration: none;
-        }
-        a:hover {
-            color: darkred;
-        }
-        a:visited {
-           color: tan;
-        }
-        h4 {
-            font-size: 52px;
-            width: 60%;
-            letter-spacing: 1px;
-            line-height: 48px;
-            margin-left: 20%;
-            color: #0b31a9;
-            font-family: 'Racing Sans One', cursive;
-           
-      
-        }
-        h4, #logo {
-            display: block;
-        }
-        #logo {
-            width: 39%;
-          margin-left: 30.5%;
-         
-            margin-top: 5%;
-            margin-bottom: 5px;
-            
-        }
-        #site {
-            width: 50%;
-            background-color: white;
-            opacity: 0.90;
-                float: left;
-               margin-left:25%;
-            
-  
-                
-            margin-top: 1%;
-            margin-bottom: 5%;
-            border-style: none;
-            
-            
-        }
-        p {
-            margin-left: 60px;
-            margin-right: 60px;
-            font-size: 18px;
-        }
+        <link rel="stylesheet" href="index_beta.css">
         
-        
-        h1 {
-            text-align: center;
-            letter-spacing: 1px;
-            margin-top: 25px;
-            font-family: 'Racing Sans One', cursive;
-        }
-        h3{
-            color: #0b31a9;
-            margin-left: 59px;
-            
-        }
-        h5, #foot {
-            color: paleturquoise;
-            font-size: 11px;
-            bottom: 3;
-            letter-spacing: 2px;
-           position: relative;
-           clear: both;
-            
-        }
-        #site, #foot {
-            display: block;
-        }
-        /* FORM */
-        fieldset {
-            border-style: none;
-            width: 80%;
-            margin-left: 10%;
-           margin: auto;
-           display: block;
-        }
-        #fullName, #your-email {
-            display: inline-block;
-           height: 4%;
-            width: 39.9%;
-            margin:auto;
-            border-color:#0b31a9
-            
-        }
-        #description {
-            width: 80%;
-            height: 15%;
-            margin-top: 15px;
-            border-color:#0b31a9
-           
-        }
-        
-        button {
-            
-            color: #0b31a9;
-            margin-left: 12%;
-            padding: 12px;
-            margin-top: 15px;
-            border-style: solid;
-            border-color: #0b31a9;
-        }
-        /*SLIDESHOW*/
-        .aSlide {
-            display: none;
-            width: 75%;
-            height: auto;
-            margin: auto;
-            margin-top: 50px;
-        }
-        .arrow-button {
-            display: inline-block;
-            margin: 2px;
-        }
-        #arrow-button1 {
-            margin-left: 15%;
-        }
-        .icon {
-            margin-left: 40px;
-        }
-       
-       
-       
-       
-       
-        /*MOBILE DESIGN MOBILE DESIGN MOBILE DESIGN MOBILE DESIGN MOBILE DESIGN */
-        @media only screen and (max-width: 700px) {
-            body {
-                background-image: url('https://res.cloudinary.com/rapha3l/image/upload/v1534253401/wood_heujvq.jpg');
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-       #site {
-           width: 90%;
-           margin-left: 5%;
-           opacity: 0.95;
-       }
-       li {
-           color: lightgrey;
-           display: inline-block;
-           font-size: 13px;
-           margin: auto;
-           font-weight: bold;
-           margin-left: 8px;
-           
-       }
-       h1 {
-           font-size: 30px;
-           padding: 6%;
-       }
-       p {
-           width: 80%;
-           font-size: 14px;
-           text-align: center;
-           margin-left: 10%;
-       }
-       h3 {
-           margin-left: 5%;
-           margin-bottom: 35px;
-           font-size: 17px;
-           padding: 5%;
-       
-           
-       }
-       h4 {
-           display: none;
-       }
-       #logo {
-           width: 83%;
-           height: auto;
-          margin: auto;
-           display: block;
-       }
-       .aSlide {
-           width: 85%;
-       }
-       button {
-           color: #0b31a9;
-           
-           font-weight:bold;
-        display: block;
-        margin: auto;
-       }
-       #foot {
-           bottom: 1;
-           position: relative;
-           clear:both;
-           margin-top: 40px;
-       }
-       #fullName, #your-email {
-            display: block;
-           height: 4%;
-            width: 80%;
-          
-            margin:auto;
-            border-color:#0b31a9
-            
-        }
-        #description {
-            width: 80%;
-            height: 15%;
-            margin: auto;
-            display: block;
-           
-            border-color:#0b31a9
-           
-        }
-        
-        button {
-            
-            color: #0b31a9;
-            margin-left: 12%;
-            padding: 8px;
-            margin: auto;
-            display: block;
-            margin-top: 15px;
-            border-style: solid;
-            border-color: #0b31a9;
-        }
-      
-    
-       
-}
-        
-        </style>
 
     </head>
 
     <body>
+
+        <!--BANNER IMAGE-->
+        <div id="banner">
+           
+            <!--background-image-->
+
+        </div>
+
+        <!--NAV BAR-->
             <ul>
-                    <li id="top">Home</li>
-                    <a href="#service"><li>Services</li></a>
+                    <a><li href="#welcome">Home</li></a>
+                    <a href="#services"><li>Services</li></a>
                     <a href="#contact"><li>Contact</li></a>
                 </ul>
                 
-            <div id="site">
+           
                    
-        <!--NAV BAR-->
-       <div id="nav">
-           
-           
-          
-            <img id="logo" src="https://res.cloudinary.com/rapha3l/image/upload/v1535035275/PW_logo_qgr0bb.png">
-            <h4>Give us a call.<br/> We can paint it all!</h4>
-            <ul>
-                <li>(202) 744 - 6732</li>
-                <li>(202) 834 - 8044</li>
-            </ul>
-            
-        </div>
-          
-        <!--CONTENT-->
+        <!--HOME CONTENT-->
+        <div id="welcome">
+          <br/>
+          <br/>
+          <div id="welcome-card">
+            <img id="collage" src="https://res.cloudinary.com/rapha3l/image/upload/v1553441808/paint_collage_odfq4n.png">
 
+            <p id="welcome-p">
+              <span>Payton & Wayne <br/> Painting and Drywall</span>
+              <br/>
+              <em>Quality service. Skilled work. Fair pricing.</em>
+              <br/>
+              <br/>
+              Serving the DC Metro Area<br/>
+             (202) 744-6732 / 834-8044
+
+            </p>
+
+          </div>
+          
+        </div>
+
+
+        <br/>
+        <!--SERVICES-->
+        <div id="service-container">
+
+          <div id="service-padding">
+            <h2 id="services">Services</h2>
+            <div class="service" id="service-1">
+                <img class="icon" src="https://res.cloudinary.com/rapha3l/image/upload/v1534621814/wall-sconce_1_cmysue.png">
+                <p class="description-p">Transforming plain, and sometimes unsightly, interiors into gorgeous, a beautiful and expressive extention of your 
+                        personality and/or brand is at the heart of business. It is our speciality at Payton &amp; Wayne and we take great pride in it. We can a room or two, or the whole house!</p>
+            </div>
+            
+            <div class="service" id="service-2">
+                    <img class="icon" src="https://res.cloudinary.com/rapha3l/image/upload/v1534621835/home_zj6sql.png">
+                    <p class="description-p">Payton &amp; Wayne Painting and Drywall provides high quality painitng services for your home and commercial exteriors. We are equipped and prepared to 
+                            paint doors, windows, fences, and small to medium-sized exterior walls. Please feel free to ask about whole buildings and large commercial projects.</p>
+                </div>
+            
+            <div class="service" id="service-3">
+                    <img class="icon" src="https://res.cloudinary.com/rapha3l/image/upload/v1534621826/ruler_xevcy2.png">
+                    <p class="description-p">We install dry wall in older homes and commercial building, as well as provide repairing for pre-installations. We work diligently and efficiently,
+                            and safety is our highest priority. Payton &amp; Wayne are sure to offer peace of mind with our sound prices and quality work.</p>
+            </div>
+        </div>
+      </div>
+        <br/>
+        <br/>
+        <br/> 
         
-       
-           
-           <br />
-
-        <!--home/about-->
-        <div class="image-container">
-            <img class="aSlide" src="https://res.cloudinary.com/rapha3l/image/upload/v1534253402/interior_azvovj.jpg">
-            <img class="aSlide" src="https://res.cloudinary.com/rapha3l/image/upload/v1534253402/minimalist_vs3xxt.jpg">
-            <img class="aSlide" src="https://res.cloudinary.com/rapha3l/image/upload/v1534253553/brown_dnhtkr.jpg">
-            <img class="aSlide" src="https://res.cloudinary.com/rapha3l/image/upload/v1534253400/bench_py0fgu.jpg">
-            <img class="aSlide" src="https://res.cloudinary.com/rapha3l/image/upload/v1534253404/window_qie29t.jpg">
-
-            <button class="arrow-button" id="arrow-button1" onclick="clickArrow(-1)">&#10094;</button>
-            <button class="arrow-button" id="arrow-button2" onclick="clickArrow(1)" >&#10095;</button>
-            
-
-        </div>
-
-          <br />
-          <br />
-         
-        <!--services-->
-           <h1 id="service">SERVICES</h1>
-
-           <div> <img class="icon" src="https://res.cloudinary.com/rapha3l/image/upload/v1534621835/home_zj6sql.png"> <span><h3> EXTERIOR PAINTING</h3></span>
-
-            </div>
-
-           <p>Payton &amp; Wayne Painting and Drywall provides high quality painitng services for your home and commercial exteriors. We are equipped and prepared to 
-               paint doors, windows, fences, and small to medium-sized exterior walls. Please feel free to ask about whole buildings and large commercial projects.
-           </p>
-
-             
-               <br />
-
-
-           <div> <img class="icon" src="https://res.cloudinary.com/rapha3l/image/upload/v1534621814/wall-sconce_1_cmysue.png"> <span><h3> INTERIOR PAINTING</h3></span>
-
-            </div>
-
-           <p>Transforming plain, and sometimes unsightly, interiors into gorgeous, a beautiful and expressive extention of your 
-               personality and/or brand is at the heart of business. It is our speciality and we take great pride in it. We can a room or two, or the whole house!</p>
-               <br/>
-               
-
-
-           <div> <img class="icon" src="https://res.cloudinary.com/rapha3l/image/upload/v1534621826/ruler_xevcy2.png"> <span><h3> DRYWALL INSTALLATION &amp; REPAIR</h3></span>
-
-            </div>
-
-           <p>We install dry wall in older homes and commercial building, as well as provide repairing for pre-installations. We work diligently and efficiently,
-                and safety is our highest priority. Payton &amp; Wayne are sure to offer peace of mind with our sound prices and quality work.</p>
-
-               <br />
-               <br />
-               <br />
-
-        <!--quote app-->
-        <h1 id="contact"> CONTACT FOR A QUOTE</h1>
+        
+        <!--CONTACT-->
+      <div id="contact-containter">
+        <h2 id="contact"> Get a free QUOTE</h2>
         <form action="/contact" id="quote-form" method="post" role="form">
             <fieldset>
                     <input type="text" id="fullname" name="fName" placeholder="Full Name" required>
                     <input type="email" id ="your-email" name="yEmail" placeholder="Email Address" required>
-                    <input id="description" type="text" name="description" placeholder="Description of services you are seeking" required>
-                       <button type="submit">Submit</button> 
+                    <textarea id="description" type="textarea" name="description" placeholder="Description of services you are seeking" rows="6" cols="40" required></textarea>
+                       <button id="btn" type="submit">Submit</button> 
            </fieldset>
         </form>
- 
+        
+       
         </div>
+        <footer> <em>&copy;2019 Payton & Wayne Painting and Drywall <br/>Designed by <a href="https://jiellr.com/">jiellr</a></em></footer>
         
-        <div id="foot"> <a href="http://www.jiellr.com/"><h5>Designed by jdonric</h5></a> </div>
+        
         
 
+     <!--JAVASCRIPT-->
         <script>
-            //slideshow
-            var slideStart = 1;
-            var left = document.getElementById("arrow-button1");
-            var right = document.getElementById("arrow-button2");
-            showImg(slideStart);
-            function clickArrow(n) {
-                showImg(slideStart += n);
-            }
-            function showImg(n) {
-                var i;
-                var x = document.getElementsByClassName("aSlide");
-           
-                if(n > x.length) {
-                    slideStart = 1;
-                }
-                if (n < 1) {
-                    slideStart = x.length;
-                }
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                x[slideStart-1].style.display = "block";
-            
-            }
-            //modal
-         
-            
-            
-        </script>
+                $(document).ready(function(){
+                  $("#service-1").mouseover(function(){
+                    $("#service-1").animate({borderWidth: "9px"});
+                  });
+                  $("#service-1").mouseout(function(){
+                    $("#service-1").animate({borderWidth: "0px"});
+                  });
 
+                  $("#service-2").mouseover(function(){
+                    $("#service-2").animate({borderWidth: "9px"});
+                  });
+                  $("#service-2").mouseout(function(){
+                    $("#service-2").animate({borderWidth: "0px"});
+                  });
+
+                  $("#service-3").mouseover(function(){
+                    $("#service-3").animate({borderWidth: "9px"});
+                  });
+                  $("#service-3").mouseout(function(){
+                    $("#service-3").animate({borderWidth: "0px"});
+                  });
+
+
+                  $("#btn").mouseover(function(){
+                    $("#btn").animate({borderWidth: "5px"});
+                  });
+                  $("#btn").mouseout(function(){
+                    $("#btn").animate({borderWidth: "0px"});
+                  });
+                });
+        </script>
     </body>
 
 </html>
