@@ -5,8 +5,472 @@
         <link href="https://fonts.googleapis.com/css?family=Hind:400,500" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Stardos+Stencil" rel="stylesheet">
         <link rel="shortcut icon" href="https://res.cloudinary.com/rapha3l/image/upload/v1535118476/PW_icon2_mtr4fp.png">
-        <link rel="stylesheet" href="index_beta.css">
+        
+        <style type="text/css">
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin:0;
+   /* background-image: url('https://res.cloudinary.com/rapha3l/image/upload/v1553306146/bg_reverse_pw_ufnkrz.jpg'); */
+
+    background-size:cover;
+    background-repeat: none;
+    background-attachment: fixed;
+    font-family: Hind, sans-serif;
+}
+
+h2 {
+  font-family: 'Stardos Stencil', cursive;
+    color: lightslategrey;
+    text-align:center;
+    font-size: 66px;
+
+    letter-spacing: 4px;
+}
+
+    /* banner */
+#banner {
+    background-image: url('https://res.cloudinary.com/rapha3l/image/upload/v1553348492/pw-web-banner_amxdt1.png');
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
+    margin:0;
+    
+}
+
+
+#banner-text {
+    font-family: 'Hind', sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    position: absolute;
+    line-height: 65px;
+    color:#0b31a9 ;
+
+}
+
+
+
+    /* navbar */
+ul {
+    list-style-type: none;
+    height: 7%;
+    margin: 0;
+    padding-top: 2.5%;
+    overflow: hidden;
+    background-color: #222;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    margin-bottom: 10%;
+    z-index:4;
+  }
+
+  li {
+    display: inline;
+    color: white;
+    
+    padding: 2%;
+    font-size: 1em;
+    text-decoration: none;
+  }
+
+  a:link {
+      text-decoration: none;
+  }
+
+  a:hover {
+      background-color: white;
+      padding-top:2%;
+      padding-bottom:2%;
+      height: 5%;
+      cursor: pointer;
+      color: #5271ff;
+  }
+
+  a:visited {
+      color:#5271ff;
+  }
+
+  /* HOME */
+  #welcome {
+      width: 100%;
+      height: 45%;
+      margin-top: 5%;
+  }
+
+  #welcome-card {
+      width: 100%;
+      
+   
+      margin: auto;
+      display: block;
+      z-index:2;
+      
+  }
+
+  #welcome-p {
+      width:43%;
+      margin-left: 35%;
+      margin-top: 25%;
+      font-family: 'Hind', sans-serif;
+      font-size: 20px;
+      text-align: right;
+      opacity: 0.8;
+      padding:1.5%;
+      background-color:lightslategray;
+  }
+
+  span {
+      font-family: 'Hind',Arial, Helvetica, sans-serif;
+      font-weight: lighter;
+      font-size: 28px;
+      text-align: right;
+      color:white;
+      
+  }
+
+
+
+  #collage {
+       width: 75%;
+       height: auto;
+       margin:auto;
+       display: block;
+       z-index: -1;
+       position: absolute;
+       top: 710;
+       left:125;
+       
+  }
+
+  /* SERVICES */
+  #service-container {
+      width: 100%;
+      height: auto;
+      margin-bottom: 5%;
+  }
+
+  h3 {
+    font-family: 'Hind', sans-serif;
+    font-size: 51px;
+    text-align: center;
+    color:#5271ff;
+    letter-spacing: 5px;
+  }
+
+  .service {
+    width: 70%;
+    height: auto;
+      margin: auto;
+      padding:1%;
+      display: block;
+     
+     border-color:black;
+     border-style: solid;
+    border-width: 0px;
+  }
+
+  .icon {
+      width: 8%;
+      height:auto;
+      margin:auto;
+      display: block;
+      margin-top:1%;
+  }
+
+  .service-splash{
+    display: block;
+    margin:auto;
+  }
+  .description-p {
+      width: 75%;
+      font-size: 22px;
+      text-align: left;
+      margin-left: 12%;
+      letter-spacing: 1.25px;
+      font-weight: lighter;
+  }
+
+  .icon, .description-p {
+      display: block;
+      
+  }
+
+  /* CONTACT */
+
+ 
+  fieldset {
+      border-style: none;
+      width: 65%;
+     
+  }
+
+  form {
+      border-style: none;
+      width: 60%;
+      margin: 5%;
+     
+  }
+
+  #fullname #your-email, #description {
+      display: block;
+      margin-bottom: 3%;
+      width: 75%;
+      
+
+    background-color: #222222;
+    color:white;
+  }
+
+  #fullname, #your-email {
+      width: 75%;
+      height: 10%;
+      background-color: #222222;
+      color: whitesmoke;
+      border-style:none;
+      margin-top: 2%;
+      font-family: 'Hind', Arial, Helvetica, sans-serif;
+  }
+
+  #description {
+      width: 75%;
+      height: 25%;
+      margin-top: 2%;
+      border-style:none;
+      color: whitesmoke;
+
+  }
+
+  textarea {
+      font-family: 'Hind', Arial, Helvetica, sans-serif;
+  }
+
+  button {
+      font-family: 'Hind', Arial, Helvetica, sans-serif;
+      padding: 2%;
+      border-style: solid;
+      border-width: 0px;
+      border-color: #222222;
+      background-color:#5271ff;
+      cursor: pointer;
+      color: white;
+  }
+
+  #contact-containter {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10%;
+      display: absolute;
+  }
+
+  #btm-logo {
+    width: 22.5%;
+  display: inline-block;
+   margin-left: -12%;
+  }
+
+  #btm-logo, form {
+     display: inline-block;
+  }
+
+
+  
+
+  footer {
+      color: #0b31a9;
+      font-size: 11px;
+      bottom: 7;
+      margin: 3%;
+  }
+  
+  #mobile-contact {
+  display: none;
+}
+  
+
+
+
+
+/*MOBILE DESIGN MOBILE DESIGN MOBILE DESIGN MOBILE DESIGN MOBILE DESIGN */
+@media only screen and (max-width: 700px) {
+    body {
+        background-image: url('https://res.cloudinary.com/rapha3l/image/upload/v1553306146/bg_reverse_pw_ufnkrz.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin:0;
+    }
+
+    #banner {
+        background-image: url('https://res.cloudinary.com/rapha3l/image/upload/v1553348492/pw-web-banner_amxdt1.png');
+        background-attachment: scroll;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width:100%;
+      height:38%;
+        margin:0;
+        
+    }
+
+    ul {
+        list-style-type: none;
+        height: 7%;
+        margin: 0;
+        padding-top: 2.5%;
+        background-color: #222;
+        margin-bottom: 10%;
+        z-index:2;
+        display:none;
+        
+      }
+
+
+      #welcome {
+        width: 100%;
+        height:auto;
+       
+    }
+  
+    #welcome-card {
+        width: 70%;
+       
+        margin: auto;
+        display: block;
+        display:none;
+       
+
+      
+    }
+  
+    #welcome-p {
+        width:85%;
+        position: absolute;
+        font-family: 'Hind', sans-serif;
+        font-size: 1.5em;
+        text-align:center;
+        opacity: 0.95;
+        
+        
+    }
+  
+    span {
+        font-family: 'Hind', Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 1em;
+        text-align: left;
+        color:#5271ff;
+        
+    }
+  
+    
+  
+    #collage {
+         width: 90%;
+         height: auto;
+        
+         display: none;
+      
+    }
+
+    #service-container {
+        width: 100%;
+      height: auto;
+      z-index: 1;
+        
+    }
+
+    .service {
+        width: 70%;
+        display: inline-block;
+         
+         border-style: solid;
+        border-width: 0px;
+      }
+
+      .icon {
+        width: 15%;
+        height:auto;
+        margin:auto;
+        display: block;
+        margin-top: 5%;
+        
+    }
+    .description-p {
+        width: 95%;
+        font-size: 0.8em;
+        text-align: center;
+       
+        color: white;
+    }
+
+    h2 {
+      display: none;
+    }
+
+    .service-splash{
+    display: block;
+    margin:auto;
+    width: 65%;
+  }
+
+    #contact-containter {
+        width: 70%;
+        
+        
+    }
+
+    fieldset {
+        border-style: none;
+        width: 100%;
+        margin-left: 5%;
+        bottom: 30;
+        
+    }
+
+    form {
+        border-style: none;
+        width: 100%;
+        margin-left: 5%;
+        bottom: 30;
+        
+    }
+
+   
+#btm-logo {
+width: 65%;
+display: block;
+margin:auto;
+}
+
+#btm-logo, form {
+  display: block;
+}
+    
+  footer {
+    color: #5271ff;
+    font-size: 11px;
+    bottom: 7;
+    margin: 3%;
+}
+
+#mobile-contact {
+  display: inline;
+  color:lightgrey;
+  font-size: 1.2em;
+}
+
+
+
+}
+
+        
+        </style>
         
 
     </head>
@@ -27,62 +491,67 @@
                     <a href="#contact"><li>Contact</li></a>
                 </ul>
                 
-           
+                
                    
         <!--HOME CONTENT-->
         <div id="welcome">
-          <br/>
-          <br/>
+        
+          
           <div id="welcome-card">
-            <img id="collage" src="https://res.cloudinary.com/rapha3l/image/upload/v1553441808/paint_collage_odfq4n.png">
-
+        
             <p id="welcome-p">
-              <span>Payton & Wayne <br/> Painting and Drywall</span>
-              <br/>
-              <em>Quality service. Skilled work. Fair pricing.</em>
-              <br/>
+            <!-- <span>Payton & Wayne <br/> Painting and Drywall</span>
+              <br/>--> 
+              
+              <span>Quality service. Skilled work. Fair pricing.</span>
+             
               <br/>
               Serving the DC Metro Area<br/>
-             (202) 744-6732 / 834-8044
+             (202) 744-6732 / (202) 834-8044
 
             </p>
+            <img id="collage" src="https://res.cloudinary.com/rapha3l/image/upload/v1553441808/paint_collage_odfq4n.png">
 
           </div>
           
         </div>
 
 
-        <br/>
         <!--SERVICES-->
         <div id="service-container">
 
-          <div id="service-padding">
+          
             <h2 id="services">Services</h2>
             <div class="service" id="service-1">
                 <img class="icon" src="https://res.cloudinary.com/rapha3l/image/upload/v1534621814/wall-sconce_1_cmysue.png">
+                <img class="service-splash" src="https://res.cloudinary.com/rapha3l/image/upload/v1555854036/interior_qofnx1.png">
                 <p class="description-p">Transforming plain, and sometimes unsightly, interiors into gorgeous, a beautiful and expressive extention of your 
                         personality and/or brand is at the heart of business. It is our speciality at Payton &amp; Wayne and we take great pride in it. We can a room or two, or the whole house!</p>
             </div>
             
             <div class="service" id="service-2">
                     <img class="icon" src="https://res.cloudinary.com/rapha3l/image/upload/v1534621835/home_zj6sql.png">
+                    <img class="service-splash" src="https://res.cloudinary.com/rapha3l/image/upload/v1555854165/exterior_nstpjk.png">
                     <p class="description-p">Payton &amp; Wayne Painting and Drywall provides high quality painitng services for your home and commercial exteriors. We are equipped and prepared to 
-                            paint doors, windows, fences, and small to medium-sized exterior walls. Please feel free to ask about whole buildings and large commercial projects.</p>
+                            paint doors, windows, fences, and small to medium-sized exteriors. Please feel free to ask about whole buildings and large commercial projects.</p>
                 </div>
             
             <div class="service" id="service-3">
                     <img class="icon" src="https://res.cloudinary.com/rapha3l/image/upload/v1534621826/ruler_xevcy2.png">
+                    <img class="service-splash" src="https://res.cloudinary.com/rapha3l/image/upload/v1555854162/drywall_apvzkp.png">
                     <p class="description-p">We install dry wall in older homes and commercial building, as well as provide repairing for pre-installations. We work diligently and efficiently,
                             and safety is our highest priority. Payton &amp; Wayne are sure to offer peace of mind with our sound prices and quality work.</p>
             </div>
-        </div>
+        
       </div>
         <br/>
         <br/>
         <br/> 
         
         
+       
         <!--CONTACT-->
+    
       <div id="contact-containter">
         <h2 id="contact"> Get a free QUOTE</h2>
         <form action="/contact" id="quote-form" method="post" role="form">
@@ -93,17 +562,20 @@
                        <button id="btn" type="submit">Submit</button> 
            </fieldset>
         </form>
-        
-       
-        </div>
-        <footer> <em>&copy;2019 Payton & Wayne Painting and Drywall <br/>Designed by <a href="https://jiellr.com/">jiellr</a></em></footer>
+
+        <img id="btm-logo" src="https://res.cloudinary.com/rapha3l/image/upload/v1535035275/PW_logo_qgr0bb.png">
+      </div>
+      
+     
+        <footer> <span id="mobile-contact"> Serving the DC Metro Area
+          (202) 744-6732 / (202) 834-8044 </span>  <br/><br/><em>&copy;2019 Payton & Wayne Painting and Drywall <br/>Designed by <a href="https://jiellr.com/">jiellr</a></em></footer>
         
         
         
 
      <!--JAVASCRIPT-->
-        <script>
-                $(document).ready(function(){
+       <script>
+                /* $(document).ready(function(){
                   $("#service-1").mouseover(function(){
                     $("#service-1").animate({borderWidth: "9px"});
                   });
@@ -132,8 +604,9 @@
                   $("#btn").mouseout(function(){
                     $("#btn").animate({borderWidth: "0px"});
                   });
-                });
-        </script>
+                });*/
+        </script> 
     </body>
 
 </html>
+
