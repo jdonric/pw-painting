@@ -1,6 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin:0;
-    background-image: url('https://res.cloudinary.com/rapha3l/image/upload/v1553306146/bg_reverse_pw_ufnkrz.jpg');
+   /* background-image: url('https://res.cloudinary.com/rapha3l/image/upload/v1553306146/bg_reverse_pw_ufnkrz.jpg'); */
+
     background-size:cover;
     background-repeat: none;
     background-attachment: fixed;
@@ -8,11 +13,12 @@ body {
 }
 
 h2 {
-    font-family: 'Hind', sans-serif;
-    color: whitesmoke;
+  font-family: 'Stardos Stencil', cursive;
+    color: lightslategrey;
     text-align:center;
-    font-size: 32px;
-    margin-top: 10%;
+    font-size: 66px;
+
+    letter-spacing: 4px;
 }
 
     /* banner */
@@ -52,7 +58,7 @@ ul {
     position: sticky;
     top: 0;
     margin-bottom: 10%;
-    z-index:2;
+    z-index:4;
   }
 
   li {
@@ -69,89 +75,116 @@ ul {
   }
 
   a:hover {
-      background-color: #0b31a9;
-      padding-top:3%;
-      padding-bottom:3%;
-      height:  7%;
+      background-color: white;
+      padding-top:2%;
+      padding-bottom:2%;
+      height: 5%;
       cursor: pointer;
+      color: #5271ff;
   }
 
   a:visited {
-      color:grey;
+      color:#5271ff;
   }
 
   /* HOME */
   #welcome {
       width: 100%;
-      height: 90%;
+      height: 45%;
+      margin-top: 5%;
   }
 
   #welcome-card {
-      width: 65%;
-      padding: 5%;
+      width: 100%;
+      
+   
       margin: auto;
       display: block;
-      background-color: lightgrey;
+      z-index:2;
+      
   }
 
   #welcome-p {
-      width:25%;
-      position: absolute;
+      width:43%;
+      margin-left: 35%;
+      margin-top: 25%;
       font-family: 'Hind', sans-serif;
-      font-size: 18px;
-      z-index: 1;
+      font-size: 20px;
+      text-align: right;
+      opacity: 0.8;
+      padding:1.5%;
+      background-color:lightslategray;
   }
 
   span {
       font-family: 'Hind',Arial, Helvetica, sans-serif;
       font-weight: lighter;
-      font-size: 30px;
-      text-align: center;
-      color:#5271ff;
-      z-index: 1;
+      font-size: 28px;
+      text-align: right;
+      color:white;
+      
   }
 
-  #collage, #welcome-p {
-      display: inline;
-  }
+
 
   #collage {
-       width: 55%;
+       width: 75%;
        height: auto;
+       margin:auto;
+       display: block;
+       z-index: -1;
+       position: absolute;
+       top: 710;
+       left:125;
+       
   }
 
   /* SERVICES */
   #service-container {
       width: 100%;
-      height: 70%;
-      
+      height: auto;
+      margin-bottom: 5%;
+  }
+
+  h3 {
+    font-family: 'Hind', sans-serif;
+    font-size: 51px;
+    text-align: center;
+    color:#5271ff;
+    letter-spacing: 5px;
   }
 
   .service {
-    width: 20%;
-    height: 70%;
-      margin: 5%;
-      margin-top: 1.5%;
+    width: 70%;
+    height: auto;
+      margin: auto;
       padding:1%;
-      display: inline-block;
-     background-color: whitesmoke;
-     border-color:#d9d9d9;
+      display: block;
+     
+     border-color:black;
      border-style: solid;
     border-width: 0px;
   }
 
   .icon {
-      width: 17%;
+      width: 8%;
       height:auto;
       margin:auto;
       display: block;
-      margin-top: 5%;
+      margin-top:1%;
+  }
+
+  .service-splash{
+    display: block;
+    margin:auto;
   }
   .description-p {
       width: 75%;
-      font-size: 14px;
+      font-size: 22px;
       text-align: left;
       margin-left: 12%;
+      letter-spacing: 1.25px;
+      font-weight: lighter;
   }
 
   .icon, .description-p {
@@ -160,33 +193,44 @@ ul {
   }
 
   /* CONTACT */
+
+ 
   fieldset {
       border-style: none;
+      width: 65%;
+     
+  }
+
+  form {
+      border-style: none;
       width: 60%;
-      margin-left: 15%;
+      margin: 5%;
+     
   }
 
   #fullname #your-email, #description {
       display: block;
       margin-bottom: 3%;
-      width: 90%;
+      width: 75%;
+      
 
     background-color: #222222;
     color:white;
   }
 
   #fullname, #your-email {
-      width: 45%;
-      height: 6%;
+      width: 75%;
+      height: 10%;
       background-color: #222222;
       color: whitesmoke;
       border-style:none;
+      margin-top: 2%;
       font-family: 'Hind', Arial, Helvetica, sans-serif;
   }
 
   #description {
-      width: 90.7%;
-      height: 15%;
+      width: 75%;
+      height: 25%;
       margin-top: 2%;
       border-style:none;
       color: whitesmoke;
@@ -210,8 +254,23 @@ ul {
 
   #contact-containter {
       width: 100%;
-      height: 80%;
+      height: auto;
+      margin-bottom: 10%;
+      display: absolute;
   }
+
+  #btm-logo {
+    width: 22.5%;
+  display: inline-block;
+   margin-left: -12%;
+  }
+
+  #btm-logo, form {
+     display: inline-block;
+  }
+
+
+  
 
   footer {
       color: #0b31a9;
@@ -220,7 +279,9 @@ ul {
       margin: 3%;
   }
   
- 
+  #mobile-contact {
+  display: none;
+}
   
 
 
@@ -229,9 +290,10 @@ ul {
 /*MOBILE DESIGN MOBILE DESIGN MOBILE DESIGN MOBILE DESIGN MOBILE DESIGN */
 @media only screen and (max-width: 700px) {
     body {
-        background-image: url('https://res.cloudinary.com/rapha3l/image/upload/v1534253401/wood_heujvq.jpg');
+        background-image: url('https://res.cloudinary.com/rapha3l/image/upload/v1553306146/bg_reverse_pw_ufnkrz.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        margin:0;
     }
 
     #banner {
@@ -240,7 +302,7 @@ ul {
         background-size: cover;
         background-repeat: no-repeat;
         width:100%;
-       height:35%;
+      height:38%;
         margin:0;
         
     }
@@ -253,6 +315,7 @@ ul {
         background-color: #222;
         margin-bottom: 10%;
         z-index:2;
+        display:none;
         
       }
 
@@ -264,39 +327,44 @@ ul {
     }
   
     #welcome-card {
-        width: 82%;
-        height: 73%;
-        padding:4%;
+        width: 70%;
+       
         margin: auto;
         display: block;
-        background-color: lightgrey;
+        display:none;
+       
+
+      
     }
   
     #welcome-p {
-        width:75%;
+        width:85%;
         position: absolute;
         font-family: 'Hind', sans-serif;
-        font-size: 1em;
+        font-size: 1.5em;
         text-align:center;
-        z-index: 1;
+        opacity: 0.95;
+        
+        
     }
   
     span {
         font-family: 'Hind', Arial, Helvetica, sans-serif;
         font-weight: lighter;
         font-size: 1em;
-        text-align: center;
+        text-align: left;
         color:#5271ff;
-        z-index: 1;
+        
     }
   
-    #collage, #welcome-p {
-        display: block;
-    }
+    
   
     #collage {
          width: 90%;
          height: auto;
+        
+         display: none;
+      
     }
 
     #service-container {
@@ -307,52 +375,83 @@ ul {
     }
 
     .service {
-        width: 80%;
-        height: 65%;
-          margin: 5%;
-          margin-top: 1.5%;
-          padding:1%;
-          display: block;
-         background-color: whitesmoke;
-         border-color:#d9d9d9;
+        width: 70%;
+        display: inline-block;
+         
          border-style: solid;
         border-width: 0px;
       }
 
       .icon {
-        width: 17%;
+        width: 15%;
         height:auto;
         margin:auto;
         display: block;
         margin-top: 5%;
+        
     }
     .description-p {
-        width: 80%;
+        width: 95%;
         font-size: 0.8em;
         text-align: center;
-        margin-left: 10%;
+       
+        color: white;
     }
 
+    h2 {
+      display: none;
+    }
+
+    .service-splash{
+    display: block;
+    margin:auto;
+    width: 65%;
+  }
+
     #contact-containter {
-        width: 100%;
+        width: 70%;
         
         
     }
 
     fieldset {
         border-style: none;
-        width: 90%;
+        width: 100%;
         margin-left: 5%;
         bottom: 30;
-     
+        
     }
 
+    form {
+        border-style: none;
+        width: 100%;
+        margin-left: 5%;
+        bottom: 30;
+        
+    }
+
+   
+#btm-logo {
+width: 65%;
+display: block;
+margin:auto;
+}
+
+#btm-logo, form {
+  display: block;
+}
     
   footer {
     color: #5271ff;
     font-size: 11px;
     bottom: 7;
     margin: 3%;
+}
+
+#mobile-contact {
+  display: inline;
+  color:lightgrey;
+  font-size: 1.2em;
 }
 
 
